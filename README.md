@@ -74,7 +74,7 @@ for every regulation scenario.
 
 This guarantees that the day-ahead schedule is robust to regulation uncertainty.
 
-### 2. Hour-Ahead / Real-Time (Rolling Horizon)
+### 2. Hour-Ahead / Real-Time (Rolling Window)
 In real-time operation:
 - prices and SOC are observed,
 - previously committed regulation capacity must be honored,
@@ -85,7 +85,7 @@ The hour-ahead model:
 - respects day-ahead commitments,
 - reacts to realized regulation energy.
 
-This rolling-horizon approach mimics how batteries are actually operated.
+This rolling-window approach mimics how batteries are actually operated.
 
 ---
 
