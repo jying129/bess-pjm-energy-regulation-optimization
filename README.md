@@ -178,5 +178,5 @@ The code requires:
 - Matplotlib
 - scikit-learn (optional)
 - Optimization solver (e.g., Gurobi, CPLEX, CBC)
-- 
+
 ---
