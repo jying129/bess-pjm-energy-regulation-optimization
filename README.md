@@ -143,17 +143,16 @@ Defines:
 - charging/discharging efficiency,
 - degradation and SOC penalty parameters,
 - processed hourly energy prices,
-- regulation prices (capacity + performance + mileage).
+- regulation prices (capacity, performance, and mileage).
 
 ### data_process.py
 Implements:
 - hourly aggregation of PJM data,
 - construction of aggregate RegD signal parameters,
 - stochastic scenario generation,
-- scenario reduction via clustering,
-- visualization utilities.
+- scenario reduction via clustering.
 
-### BESS_model2s.py
+### BESS_dayahead.py
 Defines the mathematical optimization models, including:
 - decision variables (energy, regulation, SOC),
 - SOC dynamics under uncertain regulation deployment,
