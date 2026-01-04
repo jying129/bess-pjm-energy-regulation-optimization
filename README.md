@@ -112,22 +112,23 @@ while allowing hourly optimization.
 ```text
 .
 ├── input/                       
-│   ├── reg_market_results_new.csv    # Regulation market results
-│   ├── reg_signal.csv.xz             # 2‑sec RegD signal (compressed)
-│   ├── reserve_market_results_new.csv# Reserve market results
-│   └── rt_hrl_lmps-2.csv             # Real‑time hourly LMPs
+│   ├── reg_market_results_new.csv      # Regulation market results
+│   ├── reg_signal.csv.xz               # 2‑sec RegD signal (compressed)
+│   ├── reserve_market_results_new.csv  # Reserve market results with regulation capability clearing prices
+                                          and regulation performance clearing prices
+│   └── rt_hrl_lmps-2.csv               # Real‑time hourly LMPs
 ├── output/                      
-│   ├── bess_opt_dispatch.png     # Dispatch plot
-│   ├── bess_parameters_table.png # Parameter summary table
-│   ├── rolling_horizon_profit.png# Rolling‑horizon profit plot
-│   └── rolling_horizon_sweep.csv # Hourly-ahead rolling window results
+│   ├── bess_opt_dispatch.png           # Dispatch plot
+│   ├── bess_parameters_table.png       # Parameter summary table
+│   ├── rolling_horizon_profit.png      # Rolling‑horizon profit plot
+│   └── rolling_horizon_sweep.csv       # Hourly-ahead rolling window results
 ├── src/                         
-│   ├── BESS_constantParam.py     # BESS parameters & market inputs
-│   ├── BESS_dayahead.py          # Stochastic optimization models for day-ahead time scale
-│   ├── BESS_hourahead_rolling.py # Rolling‑horizon control for hour-ahead time scale
-│   ├── data_process.py           # Market data processing & scenario generation
-│   ├── main_dayahead.py          # Day‑ahead optimization
-│   └── main_hourahead.py         # Hour‑ahead simulation
+│   ├── BESS_constantParam.py           # BESS parameters & market inputs
+│   ├── BESS_dayahead.py                # Stochastic optimization models for day-ahead time scale
+│   ├── BESS_hourahead_rolling.py       # Rolling‑horizon control for hour-ahead time scale
+│   ├── data_process.py                 # Market data processing & scenario generation
+│   ├── main_dayahead.py                # Day‑ahead optimization
+│   └── main_hourahead.py               # Hour‑ahead simulation
 └── README.md
 
 ```
