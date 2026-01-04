@@ -5,7 +5,7 @@
 This repository contains a **Python implementation** for modeling and optimizing the participation of a **Battery Energy Storage System (BESS)** in **PJM electricity markets**, to maximize the revenue from **joint energy arbitrage and frequency regulation (RegD)**.
 
 The code implements a **scenario-based optimization framework** that captures:
-- real-time energy market prices,
+- day-ahead energy market prices,
 - frequency regulation revenues,
 - battery operational constraints (SOC, power limits, efficiency),
 - uncertainty in regulation signal response.
@@ -14,8 +14,8 @@ The code implements a **scenario-based optimization framework** that captures:
 
 ## Context
 
-Battery energy storage systems can earn revenue from multiple markets simultaneously:
-- **Energy markets**: performs energy arbitrage (buy low, sell high),
+Battery energy storage systems can earn revenue from multiple markets:
+- **Energy markets**: perform energy arbitrage (buy low, sell high),
 - **Frequency regulation markets**: continuously balance short-term supply–demand mismatches and maintain system frequency.
 
 PJM operates two regulation products:
@@ -30,9 +30,8 @@ PJM operates two regulation products:
   - Issued every **2 seconds**  
   - Roughly energy-neutral *on average*, but **not within each hour**
 
-This project focuses on **RegD**, which presents unique challenges for batteries.
+This project focuses on **RegD**. Although RegD is designed to be energy-neutral over long periods, **actual deployment within an hour is uncertain**. 
 
-Although RegD is designed to be energy-neutral over long periods, **actual deployment within an hour is uncertain**.  
 This uncertainty affects the battery’s **state of charge (SOC)** and can cause:
 - infeasible SOC trajectories,
 - unexpected saturation at SOC bounds,
