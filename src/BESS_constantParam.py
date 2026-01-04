@@ -53,7 +53,7 @@ c_corr_adder = 0.005             # Additional cost adder ($/kWh) on correction e
 
 market_start_date = '2025-05-01'
 market_end_date = '2025-08-31'
-df_energy_data = pd.read_csv('input/rt_hrl_lmps-2.csv', sep=',')
+df_energy_data = pd.read_csv('input/da_hrl_lmps.csv', sep=',')
 pr_e_rt = transfer(
     df_energy_data,
     target_cols=['total_lmp_rt'],
